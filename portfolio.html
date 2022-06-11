@@ -6,124 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio goit-markup-hw-02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Шапка сайта-->
-    <header>
-        <nav>
-            <a href="./index.html" lang="en">
+    <header class="header solid">
+        <div class="container">
+            <a href="./index.html" lang="en" class="logo">
                 <!-- логотип ссылка-->
-                WebStudio
+                Web<span class="logo studio">Studio</span>
             </a>
-            <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="#">Контакты</a></li>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="./index.html" class="menu-link current">Студия</a></li>
+                    <li class="menu-item"><a href="./portfolio.html" class="menu-link">Портфолио</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-info" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="menu-item"><a class="menu-info" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Чем мы занимаемся</h2>
-            <!--h2 не видно, не забыть убрать в CSS!!!-->
-            <ul>
-                <li><button type="button">Все</button></li>
-                <li><button type="button">Веб-сайты</button></li>
-                <li><button type="button">Приложения</button></li>
-                <li><button type="button">Дизайн</button></li>
-                <li><button type="button">Маркетинг</button></li>
-            </ul>
-        </section>
-        <section>
-            <ul>
-                <li>
-                    <img src="./images/img.jpg" alt="Веб-сайт Технокряк" width="370">
-                    <div>
-                        <h4>Технокряк</h4>
-                        <p>Веб-сайт</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/img(1).jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                    <div>
-                        <h4 lang="en">Постер New Orlean vs Golden Star</h4>
-                        <p>Дизайн</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/img(2).jpg" alt="Ресторан Seafood" width="370">
-                    <div>
-                        <h4>Ресторан Seafood</h4>
-                        <p>Приложение</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/img(3).jpg" alt="Проект Prime" width="370">
-                    <div>
-                        <h4>Проект Prime</h4>
-                        <p>Маркетинг</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/img(4).jpg" alt="Проект Boxes" width="370">
-                    <div>
-                        <h4>Проект Boxes</h4>
-                        <p>Приложение</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/img(5).jpg" alt="Inspiration has no Borders" width="370">
-                    <div>
-                        <h4 lang="en">Inspiration has no Borders</h4>
-                        <p>Веб-сайт</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/img(6).jpg" alt="Издание Limited Edition" width="370">
-                    <div>
-                        <h4 lang="en">Издание Limited Edition</h4>
-                        <p>Дизайн</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/img(7).jpg" alt="Проект LAB" width="370">
-                    <div>
-                        <h4>Проект LAB</h4>
-                        <p>Маркетинг</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/img(8).jpg" alt="Growing Business" width="370">
-                    <div>
-                        <h4 lang="en">Growing Business</h4>
-                        <p>Приложение</p>
-                    </div>
-                </li>
+        <section class="filters">
+            <div class="container">
+                <h1 class="visually-hidden">Наши работы</h1>
+                <!--h1 не видно, не забыть убрать в CSS!!!-->
+                <ul class="menu-button">
+                    <li class="menu-btn-item"><button type="button" class="btn-portfolio">Все</button></li>
+                    <li class="menu-btn-item"><button type="button" class="btn-portfolio">Веб-сайты</button></li>
+                    <li class="menu-btn-item"><button type="button" class="btn-portfolio">Приложения</button></li>
+                    <li class="menu-btn-item"><button type="button" class="btn-portfolio">Дизайн</button></li>
+                    <li class="menu-btn-item"><button type="button" class="btn-portfolio">Маркетинг</button></li>
+                </ul>
+                <ul class="works">
+                    <li class="wokr-item">
+                        <img src="./images/img.jpg" alt="Веб-сайт Технокряк" width="370">
+                        <div>
+                            <h4 class="work-title">Технокряк</h4>
+                            <p class="work-description">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="wokr-item">
+                        <img src="./images/img(1).jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                        <div>
+                            <h4 class="work-title" lang="en">Постер New Orlean vs Golden Star</h4>
+                            <p class="work-description">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="wokr-item">
+                        <img src="./images/img(2).jpg" alt="Ресторан Seafood" width="370">
+                        <div>
+                            <h4 class="work-title">Ресторан Seafood</h4>
+                            <p class="work-description">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="wokr-item">
+                        <img src="./images/img(3).jpg" alt="Проект Prime" width="370">
+                        <div>
+                            <h4 class="work-title">Проект Prime</h4>
+                            <p class="work-description">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="wokr-item">
+                        <img src="./images/img(4).jpg" alt="Проект Boxes" width="370">
+                        <div>
+                            <h4 class="work-title">Проект Boxes</h4>
+                            <p class="work-description">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="wokr-item">
+                        <img src="./images/img(5).jpg" alt="Inspiration has no Borders" width="370">
+                        <div>
+                            <h4 class="work-title" lang="en">Inspiration has no Borders</h4>
+                            <p class="work-description">Веб-сайт</p>
 
-            </ul>
+                    </li>
+                    <li class="wokr-item">
+                        <img src="./images/img(6).jpg" alt="Издание Limited Edition" width="370">
+                        <div>
+                            <h4 class="work-title" lang="en">Издание Limited Edition</h4>
+                            <p class="work-description">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="wokr-item">
+                        <img src="./images/img(7).jpg" alt="Проект LAB" width="370">
+                        <div>
+                            <h4 class="work-title">Проект LAB</h4>
+                            <p class="work-description">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="wokr-item">
+                        <img src="./images/img(8).jpg" alt="Growing Business" width="370">
+                        <div>
+                            <h4 class="work-title" lang="en">Growing Business</h4>
+                            <p class="work-description">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <!--Футер-->
-    <footer>
-        <!-- логотип ссылка-->
-        <a href="./index.html" lang="en">
-            WebStudio
-        </a>
-        <address>
-            <ul>
-                <li><a href="https://goo.gl/maps/E31LjMS4C6WuwfjZA" target="_blank"
-                        rel="noopener nofollow noreferrer">г.
-                        Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="footer">
+        <div class="container">
+            <!-- логотип ссылка-->
+            <a href="./index.html" lang="en" class="logo-footer">
+                <!-- логотип ссылка-->
+                Web<span class="logo-footer studio-white">Studio</span>
+            </a>
+            <address class="address">
+                <ul class="address-list">
+                    <li class="address-item"><a class="address-link" href="https://goo.gl/maps/E31LjMS4C6WuwfjZA"
+                            target="_blank" rel="noopener nofollow noreferrer"> <span class="address-street">г. Киев,
+                                пр-т
+                                Леси Украинки, 26</span>
+                        </a></li>
+                    <li class="address-item"><a class="address-link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="address-item"><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 
